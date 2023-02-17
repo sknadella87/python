@@ -31,10 +31,10 @@ jobs:
         python3 -m pip install --upgrade -r requirements.txt
         python3 -m pip list
 
-    - name: Prepare for tests
-      run: |
-        openssl version -a
-        echo 0 | sudo tee /proc/sys/net/ipv6/conf/all/disable_ipv6
+    # - name: Prepare for tests
+    #   run: |
+    #     openssl version -a
+    #     echo 0 | sudo tee /proc/sys/net/ipv6/conf/all/disable_ipv6
 
     - name: Test
       run: |
