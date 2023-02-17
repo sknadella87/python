@@ -11,4 +11,3 @@ websocket_client
 gevent-ws
 coincurve
 maxminddb
-glibc>=2.3.2
